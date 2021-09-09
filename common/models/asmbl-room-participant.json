@@ -1,0 +1,41 @@
+{
+  "name": "AsmblRoomParticipant",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "IdTs": {}
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "RoomId": {
+      "type": "string"
+    },
+    "UserId": {
+      "type": "string"
+    },
+    "IsAdmin": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Room": {
+      "type": "belongsTo",
+      "model": "AsmblRoom",
+      "foreignKey": "RoomId"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "AsmblUser",
+      "foreignKey": "UserId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

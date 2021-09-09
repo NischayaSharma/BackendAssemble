@@ -1,0 +1,41 @@
+{
+  "name": "AsmblGroupParticipant",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "IdTs": {}
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "GroupId": {
+      "type": "string"
+    },
+    "UserId": {
+      "type": "string"
+    },
+    "IsAdmin": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Group": {
+      "type": "belongsTo",
+      "model": "AsmblGroup",
+      "foreignKey": "GroupId"
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "AsmblUser",
+      "foreignKey": "UserId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

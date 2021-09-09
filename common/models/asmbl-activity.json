@@ -1,0 +1,27 @@
+{
+  "name": "AsmblActivity",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "IdTs": {}
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "RoomId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

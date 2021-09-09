@@ -1,0 +1,33 @@
+{
+  "name": "AsmblRoom",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "IdTs": {}
+  },
+  "properties": {
+    "Id": {
+      "type": "string",
+      "id": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "GroupId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Group": {
+      "type": "belongsTo",
+      "model": "AsmblGroup",
+      "foreignKey": "GroupId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

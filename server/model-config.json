@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AsmblUser": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "AsmblGroup": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "AsmblRoom": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "AsmblActivity": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "AsmblRoomParticipant": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "AsmblGroupParticipant": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  },
+  "Sequence": {
+    "dataSource": "AssembleMongoDb",
+    "public": true
+  }
+}

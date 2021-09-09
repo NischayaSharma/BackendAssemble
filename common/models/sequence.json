@@ -1,0 +1,27 @@
+{
+  "name": "Sequence",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ModelName": {
+      "type": "string",
+      "required": true
+    },
+    "Sequence": {
+      "type": "number"
+    },
+    "IdPrefix": {
+      "type": "string"
+    },
+    "IdLen": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

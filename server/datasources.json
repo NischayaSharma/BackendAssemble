@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "AssembleMongoDb": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://AssembleAdmin:password123@localhost:27017/AssembleDB",
+    "database": "AssembleDB",
+    "password": "",
+    "name": "AssembleMongoDb",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
