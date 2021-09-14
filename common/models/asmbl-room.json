@@ -18,6 +18,11 @@
     },
     "GroupId": {
       "type": "string"
+    },
+    "ActivityList": {
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],
